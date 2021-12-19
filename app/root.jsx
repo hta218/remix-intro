@@ -10,7 +10,7 @@ import {
 import globalStyleURL from '~/styles/global.css'
 
 export function meta() {
-  return { 
+  return {
     title: "My first remix app",
     description: 'Yet another React framework',
     keywords: 'remix, react, framework'
@@ -43,7 +43,6 @@ function Document({ children, title }) {
         <Links />
       </head>
       <body>
-        <h1>Hello world</h1>
         {children}
         <ScrollRestoration />
         <Scripts />
@@ -60,17 +59,15 @@ function Layout({ children }) {
         <Link to='/' className="logo">
           Remix
         </Link>
-
         <ul className="nav">
           <li>
             <Link to='/posts'>Posts</Link>
           </li>
         </ul>
-
-        <div className="container">
-          {children}
-        </div>
       </nav>
+      <div className="container">
+        {children}
+      </div>
     </>
   )
 }

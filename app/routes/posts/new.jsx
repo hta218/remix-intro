@@ -1,7 +1,9 @@
 function NewPost() {
   return (
     <div>
-      <h1>New post</h1>
+      <div className="page-header">
+        <h1>New post</h1>
+      </div>
     </div>
   )
 }

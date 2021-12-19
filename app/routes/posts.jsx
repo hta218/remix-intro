@@ -1,12 +1,7 @@
 import { Outlet } from "remix"
 
 function Posts() {
-  return (
-    <div>
-      <h1>Posts route</h1>
-      <Outlet />
-    </div>
-  )
+  return <Outlet />
 }
 
 export default Posts
