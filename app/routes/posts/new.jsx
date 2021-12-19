@@ -4,8 +4,6 @@ export const action = async ({ request }) => {
   const form = await request.formData()
   const title = form.get('title')
   const body = form.get('body')
-  console.log("=========> - title", title)
-  console.log("=========> - body", body)
 
   return redirect('/posts')
 }
